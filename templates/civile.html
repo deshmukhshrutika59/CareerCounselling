@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="/static/style/style.css" />
+    <style>
+        h1{
+            font-size: 2.5rem;
+            color: #0a3d62;
+        }
+        .ul{
+            font-size: 1.6rem;
+            color: black;
+        }
+        p{
+            font-size: 1.6rem;
+            color: black;
+        }
+        .hea{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">CareerCounselling</a>
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a class="active" href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('contact') }}">Contact Us</a>
+        <!-- <a href="{{ url_for('login') }}">login</a> -->
+        <div class="dropdown">
+          <a href="#" id="moreLink">More <i class="fas fa-caret-down"></i></a>
+          <div class="submenu" id="moreSubmenu">
+            <a href="{{ url_for('careerg') }}">Career</a>
+            <a href="{{ url_for('aptitude') }}">Aptitude</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h1 class="hea">Civil Engineering</h1>
+<br><br>
+      <h1>What Makes This Career Worth Pursuing?</h1>
+      <p>
+        Are you always fascinated by different types of buildings and constructions? If yes then, civil engineering is the way to go. Civil engineering is a branch of engineering that deals with the design, development, and maintenance of the physical and naturally constructed environment, such as highways, bridges, canals, dams, airports, sewerage systems, pipes, building structural components, and railways.
+
+        It is the broadest of the engineering fields and one of the oldest and broadest engineering disciplines. Civil engineers are responsible for the construction of the world's infrastructure. They silently mold the past of nations all over the world in this way.</p>
+      <br><br>
+
+      <h1>Description</h1>
+      <p>
+        Civil engineers analyze survey reports, maps, and other data to plan projects. They consider construction costs, government regulations, potential environmental hazards, and other factors in planning stages and risk analysis. Engineers use design software to plan and design transportation systems, hydraulic systems, and structures in line with industry and government standards. They perform or oversee, surveying operations to establish reference points, grades, and elevations to guide construction. They also manage the repair, maintenance, and replacement of public and private infrastructure.
+      </p>
+<br><br>
+      <h1>Skills You Need</h1>
+      <ul class="ul">
+        <li>
+            Communication Skills: These are essential as they need to interact with clients as well as investors/shareholders.
+        </li>
+        <li>
+            Writing Skills: These are important for written communication as well as paperwork.
+        </li>
+        <li>
+          Leadership Skills: Engineers should have leadership skills because their job requires them to oversee planners, technicians, technologists, surveyors, and contractors.
+        </li>
+        
+      </ul>
+<br><br>
+      <h1>How To Pursue</h1>
+      <ul class="ul">
+        <li>
+            School: Any subject combination taking Science or Commerce or Arts (Humanities).
+        </li>
+        <li>
+           Graduation: B.Tech in Civil Engineering or any other related discipline.
+        </li>
+
+        <li>
+          Post Graduation: M.Tech in Civil Engineering.
+        </li>
+      </ul>
+      <br><br>
+      <h1>Job Opportunities</h1>
+      <ul class="ul">
+        <li>Transport Engineer</li>
+      <li>Finance Manager</li>
+      <li>Construction Engineer</li>
+      <li>Structural Engineer</li>
+      <li>Geotechnical Engineer
+      </li>
+      <li>Environmental Engineer</li>
+      </ul>
+<br><br>
+      <h1>Top Indian Institutes</h1>
+      <ul class="ul">
+        <li>Indian Institute of Technology (IITs)</li>
+        <li>Birla Institute of Technology & Science (BITS)</li>
+        <li>National Institute of Technology (NITs)</li>
+       
+      </ul>
+<br><br>
+      <h1>Pros</h1>
+      <ul class="ul">
+        <li>
+            The financial stability for doctors is really rewarding once the experience has been gained.
+        </li>
+        <li>
+            Job satisfaction for surgeons is high as they will be working for the betterment of society.
+        </li>
+        <li>It's an extremely respected profession from older times till now and it will continue to be so.</li>
+      </ul>
+      <br><br>
+      <h1>Cons</h1>
+      <ul class="ul">
+        <li>The administration of a business enterprise can be very demanding.</li>
+        <li>
+            You may not get good job opportunities, without post-graduation.
+        </li>
+        <li>
+            Bachelor’s in Business Administration is a very generalized course, making specialization essential.
+        </li>
+      </ul>
+    </section>
+
+    <br><br><br><br>
+
+    <div class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            Aptitude-based career counseling website provides personalized assessments to match individuals with suitable career paths, offering guidance on planning, education, and job search strategies aligned with their strengths and interests.
+          </p>
+        </div>
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">france</a>
+          <a href="#">russia</a>
+          <a href="#">japan</a>
+        </div>
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="#">home</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+          <a href="#">careerguidance</a>
+          <a href="#">aptitude</a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">instagram</a>
+          <a href="#">linkedin</a>
+          <a href="#">youtube</a>
+        </div>
+      </div>
+      <h1 class="credit">created by<a href="#">Us</a>&copy; copyright @2024</h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

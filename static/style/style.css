@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+:root{
+    --blue:#3c6382;
+    --dark-blue:#0a3d62;
+}
+*{
+font-family: 'Poppins',sans-serif;
+margin: 0;
+padding:0;
+box-sizing: border-box;
+text-decoration: none;
+outline: none;
+border: none;
+transition:all .3s cubic-bezier(0.38, 1.15, .7, 1.12)
+}
+*::selection{
+    background: var(--dark-blue);
+    color: #fff;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden; 
+}
+section{
+    min-height: 100vh;
+    padding:1rem 9%;
+    padding-top: 8rem;
+}
+
+.heading{
+    text-align:center;
+    color:var(--blue);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding: 1rem;
+}
+
+header{
+    width:100%;
+    display:flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    
+    position:fixed;
+    top:0; left:0;
+    z-index:1000;
+    padding:2rem;
+}
+
+header.sticky{
+    background: #fff;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 2.5rem;
+    color:var(--dark-blue);
+  
+}
+header .logo span{
+    color: var(--blue);
+}
+
+header .navbar a{
+    font-size:1.7rem;
+    margin-left: .7rem; 
+    padding:.5rem 2rem; 
+    border-radius: .5rem;
+    color:var(--dark-blue);
+
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    background: var(--blue);
+    color:#fff;
+    box-shadow: rgd(0,0,0);
+}
+
+#menu{
+    font-size:3rem;
+    color:var(--blue);
+    cursor:pointer;
+    display:none;
+    
+}
+.home{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.home .content{
+    text-align:center;
+    padding-top:3rem;
+}
+
+.home .content h1{
+   
+    font-size: 5rem;
+    color:var(--dark-blue);
+}
+.home .content h3{
+    font-size: 4rem;
+    color:var(--blue);
+    font-weight: normal;
+} 
+.home .content .btn{
+    display:inline-block;
+    
+    padding:1rem 1rem;
+    color:#fff;
+    background: var(--dark-blue);
+    border-radius:.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    margin-top:1rem;
+    font-size: 1.7rem;
+}
+.btn{
+    display:inline-block;
+    
+    padding:1rem 1rem;
+    color:#fff;
+    background: var(--dark-blue);
+    border-radius:.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    margin-top:1rem;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background: var(--blue);
+}
+.home .content .btn:hover{
+    background: var(--blue);
+}
+.browse{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.career .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.career .box-container .box{
+    flex:1 1 30rem;
+    border-radius: 50%;
+    margin:1rem;
+    padding:1rem;
+    text-align: center;
+}
+.career .box-container .box img{
+    height:12rem;
+    padding:1rem;
+}
+.career .box-container .box h3{
+    color:var(--blue);
+    font-size: 2rem;
+}
+.career .box-container .box p{
+    color:var(--dark-blue);
+    font-size: 1.4rem;
+    padding: 1rem;
+}
+.career .box-container .box:hover{
+    background-color: #90b1cd;
+}
+
+.course{
+    background: url(img/31.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.course .box-container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.course .box-container .box{
+    border-radius: .5rem;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    padding:5rem;
+    margin:1.5rem;
+    text-align: center;
+    display: flex;
+    background:#fff;
+    border:.1rem  solid rgba(0,0,0,.1);
+    width:90%;
+}
+.course .box-container .box img{
+    margin:1rem;
+    height:17rem;
+    object-fit: cover;
+    background: var(--blue);
+}
+.course .box-container .box .right{
+    display: flex;
+}
+.course .box-container .box .left{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.course .box-container .box h3{
+    font-size:2rem;
+    color:var(--blue);
+}
+.course .box-container .box h1{
+    font-size:2rem;
+    color:var(--blue);
+}
+.course .box-container .box span{
+    font-size:1.5rem;
+    color:var(--dark-blue);
+}
+.course .box-container .box .share a{
+   border-radius: 50%;
+   height:4.5rem;
+   width:4.5rem;
+   line-height: 4.5rem;
+   font-size:2rem;
+   margin:.4rem;
+   background: #eee;
+}
+.course .box-container .box .share{
+    border-top: .1rem solid rgba(0,0,0,.1);
+    padding:1rem;
+    margin-top: 1rem;
+}
+.course .box-container .box .share a:hover{
+    background: var(--blue);
+    color:#fff;
+    transform:rotate(360deg);
+}
+
+
+.footer{
+    background: #c5d1db;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.footer .box-container{
+    display:flex;
+    flex-wrap: wrap;
+}
+.footer .box-container .box{
+    flex:1 1 25rem;
+    margin:2rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:var(--blue);
+    padding:1rem 0;
+}
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color:var(--dark-blue);
+    padding:.5rem;
+}
+.footer .box-container .box a{
+    font-size: 1.5rem;
+    color:var(--dark-blue);
+    padding:.5rem;
+    display:block;
+}
+
+.footer a:hover{
+   text-decoration: underline;
+}
+
+.footer .credit{
+    font-size: 2rem;
+    font-weight:none;
+    text-align: center;
+    border-top:.1rem solid rgba(0,0,0,.1);
+    padding:2.5rem 1rem;
+    color:var(--dark-blue);
+}
+
+.footer .credit a{
+    color:var(--blue);
+}
+
+        /* Add your custom CSS here */
+        .course .box {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .course .box .right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .course .box .left {
+            text-align: right;
+        }
+
+        .course .box .left .btn {
+            padding: 10px 20px;
+            background-color: #0a3d62;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .course .box .left .btn:hover {
+            background-color: #3c6382;
+        }
+        #chatButton {
+            position: fixed;
+            bottom: 50px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+            z-index: 999; /* Ensure button stays above other content */
+            background-color: #0a3d62; /* Button color */
+            color: white; /* Text color */
+            padding: 10px 20px; /* Padding */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Cursor style */
+        }
+        
+        #chatButton:hover {
+            background-color: var(--blue); /* Button color on hover */
+        }
+        #chatt {
+            margin-right: 10px; /* Adjust the value to add more or less space */
+        }
+
+        /* CSS for the profile image in the header */
+.profile-image-container {
+    margin-left: auto; /* Align the profile image to the right side of the header */
+    margin-right: 20px; /* Adjust the spacing as needed */
+  }
+  
+  .profile-image {
+    width: 40px; /* Adjust the width and height of the profile image */
+    height: 40px;
+    border-radius: 50%; /* Make the profile image circular */
+    border: 2px solid #0a3d62; /* Add a border around the profile image */
+  }
+  
+
+@media(max-width:991px){
+    section{
+        padding:1rem 3%;
+        padding-top: 8rem;
+    }
+    #menu{
+        display:block;
+    }
+     header .navbar{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background: #fff;
+        padding:2rem;
+        border-top:.1rem solid rgb(0,0,0,.1);
+        transform-origin:top;
+        
+        transform:scaleY(0);
+        opacity: 0;
+      
+     }
+     
+     header .navbar.nav-toggle{
+        transform:scaleY(1);
+        opacity: 1;
+     }
+
+    /* when we turn our page in other device then it will show as the navbar */
+     header .navbar a{
+        display:block;
+        margin:1.5rem 0;
+        font-size: 2rem;
+     }
+     /* fatimes is the cross sign in javasript */
+     .fa-times{
+        transform:rotate(180deg);
+     }
+     
+     
+}
+
+@media(max-width:768px){
+    /* when we conver the size of the page then the size will become 55% persent othwr than which is given above */
+
+    html{
+        font-size:50%;
+    }
+
+    .home .content h1{
+        font-size: 4rem;
+    }
+
+    .home .content h3{
+        font-size: 3.5rem;
+    }
+}
+
+@media(max-width:450px){
+    /* when we conver the size of the page then the size will become 55% persent othwr than which is given above */
+
+    .home .content h1{
+        font-size: 3.5rem;
+    }
+
+    .home .content h3{
+        font-size: 2.5rem;
+    }
+
+    
+     .course .box-container .box{
+        width:100%;
+     }
+}
+
+
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: lightgray;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.submenu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.submenu a:hover {
+    background-color: #555;
+}
+
+.show {
+    display: block;
+}
+.aboutus {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    justify-content: center;
+}
+
+.aboutus .left,
+.aboutus .right {
+    display: inline-block;
+    vertical-align: top;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutus .left {
+    width: 50%;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.aboutus .right {
+    width: 50%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutus h1 {
+    font-size: 4rem;
+    color:var(--dark-blue);
+}
+
+.aboutus p {
+    font-size: 1.8rem;
+    color: var(--blue);
+    line-height: 1.6;
+}
+
+.aboutus .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.aboutus .box img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.aboutus .box h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.aboutus .box p {
+    color: #666;
+}
+
+.aboutus .box a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--dark-blue);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutus .box a:hover {
+    background-color:var(--blue);
+}
+
+
+
+.howitworks {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.howitworks h1 {
+    font-size: 4rem;
+    color:var(--dark-blue);
+}
+
+.howitworks .box {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.howitworks .box img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.howitworks .box h2 {
+    font-size: 2.8rem;
+    color: #333;
+}
+
+.howitworks .box p {
+    color: #666;
+}
+
+.whatisappti {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.whatisappti .left {
+    width: 50%;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.whatisappti .right {
+    width: 50%;
+}
+
+.whatisappti h1 {
+    font-size: 4rem;
+    color: var(--dark-blue);
+}
+
+.whatisappti p {
+    font-size: 1.9rem;
+    color: var(--blue);
+    line-height: 1.6;
+}
+
+.whatisappti a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--dark-blue);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.whatisappti a:hover {
+    background-color: var(--blue);
+}

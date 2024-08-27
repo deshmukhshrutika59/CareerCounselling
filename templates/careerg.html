@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="/static/style/style.css" />
+</head>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">CareerCounselling</a>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <a class="active" href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('about') }}">About Us</a>
+      <a href="{{ url_for('contact') }}">Contact Us</a>
+      <!-- <a href="{{ url_for('login') }}">login</a> -->
+      <div class="dropdown">
+        <a href="#" id="moreLink">More <i class="fas fa-caret-down"></i></a>
+        <div class="submenu" id="moreSubmenu">
+          <a href="{{ url_for('careerg') }}">Career</a>
+          <a href="{{ url_for('aptitude') }}">Aptitude</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <section class="career" id="career">
+        <h1 class="heading">Checkout Exciting Career</h1>
+        <div class="box-container">
+          <div class="box">
+            <img src="{{url_for('static', filename='img/ma.jpg')}}" alt="" />
+            <a href="{{ url_for('manage') }}"><h3 >Management</h3></a>
+            <p >(5 possible oppurtunities)</p>
+          </div>
+          <div class="box">
+            <img src="{{url_for('static', filename='img/engi.jpg')}}" alt="" />
+            <a href="{{ url_for('enginee') }}"><h3 >Engineering</h3></a>
+            <p >(8 possible oppurtunities)</p>
+          </div>
+          <div class="box">
+            <img src="{{url_for('static', filename='img/med.jpg')}}" alt="" />
+            <a href="{{ url_for('medici') }}"><h3 >Medicine</h3></a>
+            <p >(7 possible oppurtunities)</p>
+          </div>
+          <div class="box">
+            <img src="{{url_for('static', filename='img/gg.jpg')}}" alt="" />
+            <a href="{{ url_for('design') }}"><h3 >Design & Graphics</h3></a>
+            <p >(5 possible oppurtunities)</p>
+          </div>
+          <div class="box">
+            <img src="{{url_for('static', filename='img/gradu.jpg')}}" alt="" />
+            <a href="{{ url_for('graduate') }}"><h3 >Graduate</h3></a>
+            <p >(6 possible oppurtunities)</p>
+          </div>
+          <div class="box">
+            <img src="{{url_for('static', filename='img/fina.jpg')}}" alt="" />
+            <a href="{{ url_for('finance') }}"><h3 >Finance & Accounts</h3></a>
+            <p >(5 possible oppurtunities)</p>
+          </div>
+          <div class="box">
+            <img src="{{url_for('static', filename='img/ed.jpg')}}" alt="" />
+            <a href="{{ url_for('education') }}"><h3 >Education & Training</h3></a>
+            <p >(4 possible oppurtunities)</p>
+          </div>
+          <div class="box">
+            <img src="{{url_for('static', filename='img/civil.jpg')}}" alt="" />
+            <a href="{{ url_for('civil') }}"><h3 >Civil Services</h3></a>
+            <p >(5 possible oppurtunities)</p>
+          </div>
+          <div class="box">
+            <img src="{{url_for('static', filename='img/media.jpg')}}"
+            alt="" />
+            <a href="{{ url_for('media') }}"><h3 >Media & Journalism</h3></a>
+            <p >(5 possible oppurtunities)</p>
+          </div>
+          <div class="box">
+            <img src="{{url_for('static', filename='img/ss.jpg')}}" alt="" height="300"/>
+            <a href="{{ url_for('sales') }}"><h3 >Sales & Marketing</h3></a>
+            <p >(5 possible oppurtunities)</p>
+          </div>
+          <div class="box">
+            <img src="{{url_for('static', filename='img/avi.jpg')}}" alt="" />
+            <a href="{{ url_for('aviation') }}"><h3 >Aviation</h3></a>
+            <p >(5 possible oppurtunities)</p>
+          </div>
+          <div class="box">
+            <img src="{{url_for('static', filename='img/humi.jpg')}}" alt="" />
+            <a href="{{ url_for('humani') }}"><h3 >Humanities</h3></a>
+            <p >(8 possible oppurtunities)</p>
+          </div>
+        </div>
+      </section>
+      
+    <div class="footer">
+        <div class="box-container">
+          <div class="box">
+            <h3>about us</h3>
+            <p>
+              Aptitude-based career counseling website provides personalized assessments to match individuals with suitable career paths, offering guidance on planning, education, and job search strategies aligned with their strengths and interests.
+            </p>
+          </div>
+          <div class="box">
+            <h3>locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">france</a>
+            <a href="#">russia</a>
+            <a href="#">japan</a>
+          </div>
+          <div class="box">
+            <h3>Quick links</h3>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+            <a href="#">careerguidance</a>
+            <a href="#">aptitude</a>
+          </div>
+          <div class="box">
+            <h3>Follow Us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linkedin</a>
+            <a href="#">youtube</a>
+          </div>
+        </div>
+        <h1 class="credit">created by<a href="#">Us</a>&copy; copyright @2024</h1>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="/static/script.js"></script>
+</body>
+</html>

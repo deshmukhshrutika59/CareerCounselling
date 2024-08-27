@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="/static/style/style.css" />
+    <style>
+        h1{
+            font-size: 2.5rem;
+            color: #0a3d62;
+        }
+        .ul{
+            font-size: 1.6rem;
+            color: black;
+        }
+        p{
+            font-size: 1.6rem;
+            color: black;
+        }
+        .hea{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">CareerCounselling</a>
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a class="active" href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('contact') }}">Contact Us</a>
+        <!-- <a href="{{ url_for('login') }}">login</a> -->
+        <div class="dropdown">
+          <a href="#" id="moreLink">More <i class="fas fa-caret-down"></i></a>
+          <div class="submenu" id="moreSubmenu">
+            <a href="{{ url_for('careerg') }}">Career</a>
+            <a href="{{ url_for('aptitude') }}">Aptitude</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h1 class="hea">Business Administration</h1>
+<br><br>
+      <h1>What Makes This Career Worth Pursuing?</h1>
+      <p>
+        Do you want to learn about the inner workings of a business enterprise? Then, business administration can be a great field for you! The management of a commercial enterprise is referred to as business administration.
+
+        It entails overseeing and supervising all parts of business operations. From the point of view of management and leadership, it also covers fields that include office building administration, accounting, finance, designing, development, quality assurance, data analysis, sales, project management, information technology management, research and development, and marketing. The execution or management of business operations and decision-making, as well as the effective organization of people and other resources to steer activities toward common goals and objectives, are all part of business administration.</p>
+      <br><br>
+
+      <h1>Description</h1>
+      <p>
+        Overseeing and evaluating financial operations, approving purchases and expenditures, mediating between staff and other executives, choosing heads of departments, marketing and promoting the firm, and arranging training programs are all responsibilities of the business administrator. They are expected to drive and supervise positive business growth, detect wastage and improve efficiency, oversee day-to-day business activities, introduce and implement innovative short and long-term business goals, liaise and consult with clients, staff, and suppliers, evaluate and enhance employee performance, improve business programs, technologies, etc.
+      </p>
+<br><br>
+      <h1>Skills You Need</h1>
+      <ul class="ul">
+        <li>
+            Communication Skills: These are essential as they need to interact with clients as well as investors/shareholders.
+        </li>
+        <li>
+            Writing Skills: These are important for written communication as well as paperwork.
+        </li>
+        <li>
+            Time Management Skills: These are essential to be able to run a business smoothly.
+        </li>
+        
+      </ul>
+<br><br>
+      <h1>How To Pursue</h1>
+      <ul class="ul">
+        <li>
+            School: Any subject combination taking Science or Commerce or Arts (Humanities).
+        </li>
+        <li>
+            Graduation: B.Com / BBA Courses should be done.
+        </li>
+
+        <li>
+            Post Graduation: MBA should be done.
+        </li>
+      </ul>
+      <br><br>
+      <h1>Job Opportunities</h1>
+      <ul class="ul">
+        <li>Business Analyst</li>
+      <li>Finance Manager</li>
+      <li>Business Conultant</li>
+      <li>Strategic Business Head</li>
+      <li>Business Development Manager</li>
+      <li>Business Administrator</li>
+      </ul>
+<br><br>
+      <h1>Top Indian Institutes</h1>
+      <ul class="ul">
+        <li>The pay scale is very good.</li>
+        <li>There is a great opportunity of being able to interact with people and make connections.</li>
+        <li>There is a lot of scope, in terms of growth.</li>
+       
+      </ul>
+<br><br>
+      <h1>Pros</h1>
+      <ul class="ul">
+        <li>
+            The financial stability for doctors is really rewarding once the experience has been gained.
+        </li>
+        <li>
+            Job satisfaction for surgeons is high as they will be working for the betterment of society.
+        </li>
+        <li>It's an extremely respected profession from older times till now and it will continue to be so.</li>
+      </ul>
+      <br><br>
+      <h1>Cons</h1>
+      <ul class="ul">
+        <li>The administration of a business enterprise can be very demanding.</li>
+        <li>
+            You may not get good job opportunities, without post-graduation.
+        </li>
+        <li>
+            Bachelor’s in Business Administration is a very generalized course, making specialization essential.
+        </li>
+      </ul>
+    </section>
+
+    <br><br><br><br>
+
+    <div class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            Aptitude-based career counseling website provides personalized assessments to match individuals with suitable career paths, offering guidance on planning, education, and job search strategies aligned with their strengths and interests.
+          </p>
+        </div>
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">france</a>
+          <a href="#">russia</a>
+          <a href="#">japan</a>
+        </div>
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="#">home</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+          <a href="#">careerguidance</a>
+          <a href="#">aptitude</a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">instagram</a>
+          <a href="#">linkedin</a>
+          <a href="#">youtube</a>
+        </div>
+      </div>
+      <h1 class="credit">created by<a href="#">Us</a>&copy; copyright @2024</h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="/static/style/style.css" />
+    <style>
+        h1{
+            font-size: 2.5rem;
+            color: #0a3d62;
+        }
+        .ul{
+            font-size: 1.6rem;
+            color: black;
+        }
+        p{
+            font-size: 1.6rem;
+            color: black;
+        }
+        .hea{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">CareerCounselling</a>
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a class="active" href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('contact') }}">Contact Us</a>
+        <!-- <a href="{{ url_for('login') }}">login</a> -->
+        <div class="dropdown">
+          <a href="#" id="moreLink">More <i class="fas fa-caret-down"></i></a>
+          <div class="submenu" id="moreSubmenu">
+            <a href="{{ url_for('careerg') }}">Career</a>
+            <a href="{{ url_for('aptitude') }}">Aptitude</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h1 class="hea">Event Management</h1>
+<br><br>
+      <h1>What Makes This Career Worth Pursuing?</h1>
+      <p>
+        Do you want to plan and organize events? If yes, then you should consider event management as a career path for yourself. The use of project management techniques in the design and implementation of various large-scale events such as festivals, gatherings, ceremonies, weddings, formal parties, concerts, or conventions is known as event management.
+
+Humans live in communities and enjoy organizing activities and social gatherings, so the process of preparing and arranging the event is critical. From the Olympics to corporate breakfast meetings, the events sector now covers events of all sizes. Budgeting, scheduling, site selection, obtaining necessary permits, coordinating transportation and parking, arranging for speakers or entertainers, arranging decor, event security, catering, coordinating with third-party vendors, and emergency plans are all examples of the process of planning and coordinating the event.</p>
+      <br><br>
+
+      <h1>Description</h1>
+      <p>
+        An event manager is required to take care of the design, set-up, and execution of events that bring people together. The size of the events varies and the manager has to adjust according to that. Managing events is always a people-centric endeavour. The goal is to ensure people get the most from a given event. The jobs are very unpredictable as the plan never runs along so the professionals are more like spontaneous creatures. Networking is the main part of the job to get new assignments and to maintain old ones. The event manager is the person in charge of planning and executing the event, including the creative, technical, and logistical aspects.
+      </p>
+<br><br>
+      <h1>Skills You Need</h1>
+      <ul class="ul">
+        <li>
+            People Skills: This is one of the most important skills as an event manager has to connect with their clients along with the people who are working with them to get the task done.
+        </li>
+        <li>
+            Management Skills: Organising an event is a multi-task. To ensure the smoothness of the process to achieve a successful event, the manager must have a sort out plan marking all possible changes.
+        </li>
+        <li>
+            Communication Skills: This is the most important part of the job. Event managers are also the leader of a team that works together to build an event. Proper communication is the key to perfection.
+        </li>
+        <li>Decision Making Skills: Managing an event is not an easy task. Managers have to make quick and spontaneous decisions of the available options and resources.</li>
+      </ul>
+<br><br>
+      <h1>How To Pursue</h1>
+      <ul class="ul">
+        <li>
+            School: Any subject combination taking Science or Commerce or Arts (Humanities).
+        </li>
+        <li>
+            Graduation: Diploma in Event Management / Any graduation course
+
+        </li>
+
+        <li>
+            Post Graduation: PG Diploma in in Event Management/MBA or MA in PR
+        </li>
+      </ul>
+      <br><br>
+      <h1>Job Opportunities</h1>
+      <ul class="ul">
+        <li>Freelancer</li>
+      <li>Entertainment</li>
+      <li>Event Manager</li>
+      <li>PR Firms</li>
+      
+      </ul>
+<br><br>
+      <h1>Top Indian Institutes</h1>
+      <ul class="ul">
+        <li>National Institute of Event Management</li>
+        <li>National Academy of Event Management & Development</li>
+        <li>International Institute of Event Management
+        </li>
+        <li>College of Events & Media</li>
+        <li>Impact Institute of Event Management</li>
+       
+      </ul>
+<br><br>
+      <h1>Pros</h1>
+      <ul class="ul">
+        <li>
+            High work satisfaction as it is a creative field.
+        </li>
+        <li>
+            Gains a different perspective as one gets to be on the other side of the event.
+        </li>
+        <li>Increases network as one travels to different locations related to work.</li>
+      </ul>
+      <br><br>
+      <h1>Cons</h1>
+      <ul class="ul">
+        <li>No fixed time as the professionals have to be on their toes till the time event ends.</li>
+        <li>
+            Patience and openness to criticism is required as the clients spend a lot of money on an event as expects something in return.
+        </li>
+        <li>
+            Event managers also have to deal with difficult people at many times ( e.g.: rude, arrogant).
+        </li>
+      </ul>
+    </section>
+
+    <br><br><br><br>
+
+    <div class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            Aptitude-based career counseling website provides personalized assessments to match individuals with suitable career paths, offering guidance on planning, education, and job search strategies aligned with their strengths and interests.
+          </p>
+        </div>
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">france</a>
+          <a href="#">russia</a>
+          <a href="#">japan</a>
+        </div>
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="#">home</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+          <a href="#">careerguidance</a>
+          <a href="#">aptitude</a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">instagram</a>
+          <a href="#">linkedin</a>
+          <a href="#">youtube</a>
+        </div>
+      </div>
+      <h1 class="credit">created by<a href="#">Us</a>&copy; copyright @2024</h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

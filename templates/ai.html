@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/static/style/style.css" />
+    <style>
+      h1 {
+        font-size: 2.5rem;
+        color: #0a3d62;
+      }
+      .ul {
+        font-size: 1.6rem;
+        color: black;
+      }
+      p {
+        font-size: 1.6rem;
+        color: black;
+      }
+      .hea {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">CareerCounselling</a>
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a class="active" href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('contact') }}">Contact Us</a>
+        <!-- <a href="{{ url_for('login') }}">login</a> -->
+        <div class="dropdown">
+          <a href="#" id="moreLink">More <i class="fas fa-caret-down"></i></a>
+          <div class="submenu" id="moreSubmenu">
+            <a href="{{ url_for('careerg') }}">Career</a>
+            <a href="{{ url_for('aptitude') }}">Aptitude</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h1 class="hea">Artificial Intelligence & Machine Learning</h1>
+      <br /><br />
+      <h1>What Makes This Career Worth Pursuing?</h1>
+      <p>
+        Are you fascinated by the potential of machines to learn and make
+        intelligent decisions? If so, a career in Artificial Intelligence (AI)
+        and Machine Learning (ML) could be the perfect fit for you. This dynamic
+        field revolves around the development of systems that can perform tasks
+        requiring human-like intelligence. Artificial Intelligence and Machine
+        Learning professionals utilize advanced algorithms, data analysis, and
+        pattern recognition techniques to enable computers to learn from data
+        and make predictions or decisions. They work on a diverse range of
+        applications, from natural language processing and computer vision to
+        robotics and autonomous systems. This field not only delves into the
+        technical intricacies of AI and ML but also explores how they can
+        revolutionize industries across the spectrum. By merging principles from
+        computer science, mathematics, and cognitive sciences, AI and ML
+        engineers pave the way for groundbreaking advancements in technology.
+      </p>
+      <br /><br />
+
+      <h1>Description</h1>
+      <p>
+        Professionals in Artificial Intelligence and Machine Learning are at the
+        forefront of creating intelligent systems capable of learning and making
+        decisions. They specialize in developing algorithms and models that
+        enable computers to process and understand complex data, allowing them
+        to perform tasks traditionally requiring human intelligence. This
+        involves designing neural networks, fine-tuning algorithms, and
+        optimizing models for various applications. Additionally, AI and Machine
+        Learning experts work on enhancing system security to safeguard
+        sensitive information. They also play a vital role in translating
+        technical concepts for non-technical stakeholders, providing valuable
+        support to the board of directors and colleagues less familiar with
+        these advanced technologies. Their work spans both software and
+        hardware, ensuring seamless integration for optimal performance.
+      </p>
+      <br /><br />
+      <h1>Skills You Need</h1>
+      <ul class="ul">
+        <li>
+          Technical Skills: The professionals must have solid basic knowledge in
+          science. They must have strong maths skills as math is required for
+          both for the construction of hardware and the programming of software.
+        </li>
+        <li>
+          Communication Skills: Computer engineers work in a team and usually
+          require communicating with others regarding their job.
+        </li>
+        <li>
+          Managerial Skills: Progress of a computer engineer is through leading
+          their teams. It isvery necessary to have management skills to progress
+          in a career.
+        </li>
+        <li>
+          Problem Solving Skills: This is the basic description of the job of a
+          computer engineer. Even the tiny error will enable the programme to
+          run.
+        </li>
+        <li>
+          Learning Skills: Learning new skills and technology is a life long
+          process for computerengineers to stay in the market.
+        </li>
+      </ul>
+      <br /><br />
+      <h1>How To Pursue</h1>
+      <ul class="ul">
+        <li>
+          School: Any subject combination taking Science as the main stream.
+        </li>
+        <li>
+          Graduation: B.Tech in Artificial Intelligence & Machine Learning /
+          B.Tech in Computer Science & Engineering / B.Tech in Data Science.
+        </li>
+
+        <li>
+          Post Graduation: M.Tech in Artificial Intelligence & Machine Learning.
+        </li>
+      </ul>
+      <br /><br />
+      <h1>Job Opportunities</h1>
+      <ul class="ul">
+        <li>Computer Vision Engineer</li>
+        <li>Machine Learning Engineer</li>
+        <li>Data Analyst</li>
+        <li>DevOps Engineer</li>
+        <li>Data Scientist</li>
+      </ul>
+      <br /><br />
+      <h1>Top Indian Institutes</h1>
+      <ul class="ul">
+        <li>Indian Institute of Technology (IITs)</li>
+        <li>Birla Institute of Technology & Science (BITS)</li>
+        <li>National Institute of Technology (NITs)</li>
+        <li>Delhi Technological University (DTU)</li>
+        <li>Vellore Institute of Technology (VIT)</li>
+      </ul>
+      <br /><br />
+      <h1>Pros</h1>
+      <ul class="ul">
+        <li>
+          The pay packages are very good, so would account for a comfortable
+          life.
+        </li>
+        <li>
+          The work environment is positive and allows the individual to thrive.
+        </li>
+        <li>There is a high possibility of progress, with experience.</li>
+      </ul>
+      <br /><br />
+      <h1>Cons</h1>
+      <ul class="ul">
+        <li>It can be a stressful job with work load and tight deadlines.</li>
+        <li>
+          Regular updating of knowledge because of the ever-evolving technology.
+        </li>
+        <li>
+          Long sitting hours in front of the computer may have negative health
+          effects.
+        </li>
+      </ul>
+    </section>
+
+    <br /><br /><br /><br />
+
+    <div class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            Aptitude-based career counseling website provides personalized
+            assessments to match individuals with suitable career paths,
+            offering guidance on planning, education, and job search strategies
+            aligned with their strengths and interests.
+          </p>
+        </div>
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">france</a>
+          <a href="#">russia</a>
+          <a href="#">japan</a>
+        </div>
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="#">home</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+          <a href="#">careerguidance</a>
+          <a href="#">aptitude</a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">instagram</a>
+          <a href="#">linkedin</a>
+          <a href="#">youtube</a>
+        </div>
+      </div>
+      <h1 class="credit">created by<a href="#">Us</a>&copy; copyright @2024</h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

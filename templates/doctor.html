@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="/static/style/style.css" />
+    <style>
+        h1{
+            font-size: 2.5rem;
+            color: #0a3d62;
+        }
+        .ul{
+            font-size: 1.6rem;
+            color: black;
+        }
+        p{
+            font-size: 1.6rem;
+            color: black;
+        }
+        .hea{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">CareerCounselling</a>
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a class="active" href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('contact') }}">Contact Us</a>
+        <!-- <a href="{{ url_for('login') }}">login</a> -->
+        <div class="dropdown">
+          <a href="#" id="moreLink">More <i class="fas fa-caret-down"></i></a>
+          <div class="submenu" id="moreSubmenu">
+            <a href="{{ url_for('careerg') }}">Career</a>
+            <a href="{{ url_for('aptitude') }}">Aptitude</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h1 class="hea">Doctor
+    </h1>
+<br><br>
+      <h1>What Makes This Career Worth Pursuing?</h1>
+      <p>
+        Do you want to help people and save lives? Then, becoming a doctor is a great career path! We are all well aware of the roles of a doctor. We've interacted with many throughout our lives and we know their importance.
+
+Doctors help in maintaining a pain-free life and resolving any health or medical concerns we might have. They also help in sustaining our lives by helping us function effectively. Hospital doctors diagnose and treat medical conditions, disorders, and diseases through the application of specialist medical skills and knowledge. Hospital doctors can work in several specialities, from emergency medicine to surgery. Hospital doctors treat those who have been admitted or referred to the hospital. Medical practice correctly necessitates a thorough understanding of academic subjects such as anatomy and physiology.
+        </p>
+      <br><br>
+
+      <h1>Description</h1>
+      <p>
+        Doctors have one of the most respected yet stressful careers. They see several patients every day, and their job includes assessing these patients, diagnosis and assigning treatment plans. Doctors are on their toes the entire time and they are almost required to be available whenever possible. Their careers are demanding yet rewarding. With more experience, doctors are regarded higher. There are several specializations for doctors, based on which the work-life of a doctor differs. The priority of a doctor's work-life no matter which specialization they choose is the healthcare of the patient.
+      </p>
+<br><br>
+      <h1>Skills You Need</h1>
+      <ul class="ul">
+        <li>
+            Empathy: Even though the job is extremely stressful, doctors are required to be empathetic towards their patients.
+        </li>
+        <li>
+            Responsibility: As mentioned above the doctor needs to keep in mind that they are working with human lives. Thus they need to be responsible enough to do this job. In case a doctor isn't well or has any other issues then they have to immediately refrain from performing surgery.
+        </li>
+        <li>
+            Learning Skills: You need to be aware of upcoming findings and studies conducted and keep up with the recent developments in this field.
+        </li>
+        
+      </ul>
+<br><br>
+      <h1>How To Pursue</h1>
+      <ul class="ul">
+        <li>
+            School: Any subject combination taking Science or Commerce or Arts (Humanities).
+        </li>
+        <li>
+            Graduation: Bachelor of Medicine and Bachelor of Surgery (MBBS).
+        </li>
+
+        <li>
+            Post Graduation: MD in any medical field.
+        </li>
+      </ul>
+      <br><br>
+      <h1>Job Opportunities</h1>
+      <ul class="ul">
+        <li>General Physicians
+        </li>
+      <li>Paediatricians
+    </li>
+      <li>General Surgeon
+    </li>
+      <li>Cardiologist</li>
+     
+      </ul>
+<br><br>
+<h1>Top Indian Institutes</h1>
+<ul class="ul">
+  <li>All India Institute of Medical Sciences (AIIMS)</li>
+  <li>Father Muller Medical College Mangalore</li>
+  <li>Kasturba Medical College Manipal</li>
+ <li>Grant Medical College Mumbai</li>
+</ul>
+<br><br>
+<h1>Pros</h1>
+<ul class="ul">
+  <li>
+    They have great job stability and is well respected in the community.
+  </li>
+  <li>
+    The pay as well is rewarding and stable.
+  </li>
+  <li>Flexible work hours and room for growth and variety.</li>
+</ul>
+<br><br>
+<h1>Cons</h1>
+<ul class="ul">
+  <li>They need to study a lot.
+</li>
+  <li>
+    Sometimes the work can be draining and repetitive.
+  </li>
+  <li>
+    MBBS can be a very hectic course.
+  </li>
+</ul>
+    </section>
+
+    <br><br><br><br>
+
+    <div class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            Aptitude-based career counseling website provides personalized assessments to match individuals with suitable career paths, offering guidance on planning, education, and job search strategies aligned with their strengths and interests.
+          </p>
+        </div>
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">france</a>
+          <a href="#">russia</a>
+          <a href="#">japan</a>
+        </div>
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="#">home</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+          <a href="#">careerguidance</a>
+          <a href="#">aptitude</a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">instagram</a>
+          <a href="#">linkedin</a>
+          <a href="#">youtube</a>
+        </div>
+      </div>
+      <h1 class="credit">created by<a href="#">Us</a>&copy; copyright @2024</h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

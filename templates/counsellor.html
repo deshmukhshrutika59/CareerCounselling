@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="/static/style/style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .counselor-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border: 2px solid #0a3d62;
+      /* Add border */
+    }
+
+    .counselor-container:hover {
+      border-color: #3c6382;
+    }
+
+    .counselor-info {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .counselor-info h2 {
+      margin-top: 0;
+      color: #0a3d62;
+      font-size: 2.5rem;
+    }
+
+    .counselor-info p {
+      margin: 10px 0;
+      font-size: 1.9rem;
+      color: #333;
+    }
+
+    .counselor-info .phone-icon::before {
+      content: "\260E";
+      margin-right: 5px;
+    }
+
+    .counselor-info .email-icon::before {
+      content: "\2709";
+      margin-right: 5px;
+    }
+
+    .counselor-image img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+
+    .heading {
+      font-size: 3.8rem;
+      color: var(--blue);
+      margin-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">CareerCounselling</a>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+      <a class="active" href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('about') }}">About Us</a>
+      <a href="{{ url_for('contact') }}">Contact Us</a>
+      <!-- <a href="{{ url_for('login') }}">login</a> -->
+      <div class="dropdown">
+        <a href="#" id="moreLink">More <i class="fas fa-caret-down"></i></a>
+        <div class="submenu" id="moreSubmenu">
+          <a href="{{ url_for('careerg') }}">Career</a>
+          <a href="{{ url_for('aptitude') }}">Aptitude</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <h1 class="heading">Counselor Information</h1>
+  <div class="counselor-container">
+    <div class="counselor-info">
+      <h2>Professor Aisha Patel</h2>
+      <p>Experience: 10 years</p>
+      <p>Contact:</p>
+      <p><span class="phone-icon"></span> +91 2345678998</p>
+      <p>
+        <span class="email-icon"></span>
+        <a href="mailto:ambikagangawar@gmail.com?subject=Subject%20Here&body=Message%20Here">Send Email</a>
+      </p>
+    </div>
+    <div class="counselor-image">
+      <img src="{{url_for('static', filename='img/counsellor.jpg')}}" alt="Counselor Image" height="300" />
+    </div>
+  </div>
+  <div class="counselor-container">
+    <div class="counselor-info">
+      <h2>Professor Vikram Malhotra</h2>
+      <p>Experience: 5 years</p>
+      <p>Contact:</p>
+      <p><span class="phone-icon"></span> +91 238765432346</p>
+      <!-- <a href="#" class="send-email-link">Send Email</a> -->
+      <p>
+        <span class="email-icon"></span>
+        <a href="mailto:deshmukhshrutika59@gmail.com?subject=Subject%20Here&body=Message%20Here">Send Email</a>
+      </p>
+    </div>
+    <div class="counselor-image">
+      <img src="{{url_for('static', filename='img/counsellor1.jpg')}}" alt="Counselor Image" height="300" />
+    </div>
+  </div>
+  <div class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3>about us</h3>
+        <p>
+          Aptitude-based career counseling website provides personalized
+          assessments to match individuals with suitable career paths,
+          offering guidance on planning, education, and job search strategies
+          aligned with their strengths and interests.
+        </p>
+      </div>
+      <div class="box">
+        <h3>locations</h3>
+        <a href="#">india</a>
+        <a href="#">USA</a>
+        <a href="#">france</a>
+        <a href="#">russia</a>
+        <a href="#">japan</a>
+      </div>
+      <div class="box">
+        <h3>Quick links</h3>
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+        <a href="#">careerguidance</a>
+        <a href="#">aptitude</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="#">facebook</a>
+        <a href="#">twitter</a>
+        <a href="#">instagram</a>
+        <a href="#">linkedin</a>
+        <a href="#">youtube</a>
+      </div>
+    </div>
+    <h1 class="credit">created by<a href="#">Us</a>&copy; copyright @2024</h1>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="/static/script.js"></script>
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const sendEmailLink = document.querySelector(".send-email-link");
+    const counselorEmail = "kdake40@gmail.com"; // Change this to the correct email address
+
+    sendEmailLink.addEventListener("click", function (event) {
+      event.preventDefault();
+      window.location.href =
+        "mailto:" +
+        counselorEmail +
+        "?subject=Subject%20Here&body=Message%20Here";
+    });
+  });
+</script>
+
+</html>

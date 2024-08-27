@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/static/style/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">CareerCounselling</a>
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a class="active" href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('contact') }}">Contact Us</a>
+        <!-- <a href="{{ url_for('login') }}">login</a> -->
+        <div class="dropdown">
+          <a href="#" id="moreLink">More <i class="fas fa-caret-down"></i></a>
+          <div class="submenu" id="moreSubmenu">
+            <a href="{{ url_for('careerg') }}">Career</a>
+            <a href="{{ url_for('aptitude') }}">Aptitude</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="aboutus">
+      <br /><br /><br /><br />
+      <div>
+        <div class="left">
+          <h1>How this website can help you?</h1>
+          <p>
+            “ What am I passionate about?” “What am I going to be?” These are
+            the most difficult questions one has to face while they decide to
+            pursue their higher education.
+          </p>
+          <p>Don’t worry! We are here to help you.</p>
+        </div>
+        <br /><br />
+        <div class="right">
+          <div class="box">
+            <img
+              src="{{url_for('static', filename='img/test (1).png')}}"
+              alt=""
+            />
+            <div>
+              <br /><br />
+              <h3>Take a Test</h3>
+              <p>Take a test to know your interest and personality type.</p>
+              <a href="{{ url_for('aptitude') }}" class="btn">Learn More</a>
+            </div>
+          </div>
+          <div class="box">
+            <img
+              src="{{url_for('static', filename='/img/one-one.png')}}"
+              alt=""
+            />
+
+            <div>
+              <h3>One to One Counselling</h3>
+              <p>Get one to one counselling from our experts.</p>
+              <a href="{{ url_for('counsellor') }}" class="btn">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="howitworks">
+      <h1>How it Works?</h1>
+      <div>
+        <div class="box">
+          <img src="{{url_for('static', filename='/img/login.png')}}" alt="" />
+          <h2>Login</h2>
+        </div>
+        <div class="box">
+          <img
+            src="{{url_for('static', filename='/img/test (1).png')}}"
+            alt=""
+          />
+          <h2>Take a Aptitude Test</h2>
+        </div>
+        <div class="box">
+          <img
+            src="{{url_for('static', filename='/img/results.png')}}"
+            alt=""
+          />
+          <h2>Results</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="whatisappti">
+      <div class="left">
+        <h1>What is Aptitude Test?</h1>
+        <p>
+          Aptitude tests are designed to assess your ability to learn and to
+          think critically. While they are not tests of knowledge, they do
+          require you to apply your knowledge in a variety of ways in order to
+          solve often complex problems.
+        </p>
+        <p>
+          Aptitude tests are increasingly used by organisations to select the
+          best staff for their teams and develop those already employed. They
+          are also used to help young people make decisions about their future
+          career paths.
+        </p>
+        <a href="{{ url_for('aptitude') }}" class="btn">Take Test Now</a>
+      </div>
+      <div class="right">
+        <img
+          src=" {{url_for('static', filename='/img/apti test (1).png')}}"
+          height="300"
+        />
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            Aptitude-based career counseling website provides personalized
+            assessments to match individuals with suitable career paths,
+            offering guidance on planning, education, and job search strategies
+            aligned with their strengths and interests.
+          </p>
+        </div>
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">france</a>
+          <a href="#">russia</a>
+          <a href="#">japan</a>
+        </div>
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="#">home</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+          <a href="#">careerguidance</a>
+          <a href="#">aptitude</a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">instagram</a>
+          <a href="#">linkedin</a>
+          <a href="#">youtube</a>
+        </div>
+      </div>
+      <h1 class="credit">created by<a href="#">Us</a>&copy; copyright @2024</h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="/static/style/style.css" />
+    <style>
+        h1{
+            font-size: 2.5rem;
+            color: #0a3d62;
+        }
+        .ul{
+            font-size: 1.6rem;
+            color: black;
+        }
+        p{
+            font-size: 1.6rem;
+            color: black;
+        }
+        .hea{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">CareerCounselling</a>
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a class="active" href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('contact') }}">Contact Us</a>
+        <!-- <a href="{{ url_for('login') }}">login</a> -->
+        <div class="dropdown">
+          <a href="#" id="moreLink">More <i class="fas fa-caret-down"></i></a>
+          <div class="submenu" id="moreSubmenu">
+            <a href="{{ url_for('careerg') }}">Career</a>
+            <a href="{{ url_for('aptitude') }}">Aptitude</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h1 class="hea">Mechanical Engineering</h1>
+<br><br>
+      <h1>What Makes This Career Worth Pursuing?</h1>
+      <p>
+        Are you interested in the fusion of engineering principles, material science, and mathematical concepts to design, analyze, manufacture, and maintain mechanical systems? If so, then the field of mechanical engineering may be the perfect fit for you.
+
+        Mechanical engineering revolves around the study of moving systems and objects, exerting a profound influence on virtually every aspect of modern life, including the intricate machinery within the human body. It stands as one of the oldest and most multifaceted branches of engineering, seamlessly integrating elements from aerospace, electrical, civil, chemical, materials science, and even bio-engineering, all underpinned by a strong foundation in physics and mathematics. Additionally, mechanical engineers excel in the creation and testing of technical prototypes, bringing innovative ideas and products to life.</p>
+      <br><br>
+
+      <h1>Description</h1>
+      <p>
+        Mechanical engineers design, manufacture, and assess a variety of mechanical and thermal devices, ranging from tools and engines to machinery. They oversee the production of diverse items, including medical instruments and innovative batteries. Mechanical engineers analyze issues to ascertain if mechanical and thermal systems can offer solutions and oversee the manufacturing process. They employ analytical techniques and utilize computer-aided design for the creation or modification of mechanical and thermal apparatus. Daily responsibilities may involve assessing and diagnosing mechanical and thermal equipment, devising solutions, and conducting necessary repairs.
+      </p>
+<br><br>
+      <h1>Skills You Need</h1>
+      <ul class="ul">
+        <li>
+            Communication Skills: These are essential as they need to interact with clients as well as investors/shareholders.
+        </li>
+        <li>
+            Writing Skills: These are important for written communication as well as paperwork.
+        </li>
+        <li>
+            Time Management Skills: These are essential to be able to run a business smoothly.
+        </li>
+        
+      </ul>
+<br><br>
+      <h1>How To Pursue</h1>
+      <ul class="ul">
+        <li>
+            School: Any subject combination taking Science or Commerce or Arts (Humanities).
+        </li>
+        <li>
+          Graduation: B.Tech in Mechanical Engineering / B.Tech in Automobile Engineering.
+        </li>
+
+        <li>
+            Post Graduation: M Tech should be done.
+        </li>
+      </ul>
+      <br><br>
+      <h1>Job Opportunities</h1>
+      <ul class="ul">
+        <li>Robotics Engineer</li>
+      <li>Finance Manager</li>
+      <li>Mechanical Design Engineer </li>
+      <li>Manufacturing Engineer</li>
+      <li>HVAC Engineer</li>
+      <li>Mechatronics Engineer</li>
+      </ul>
+<br><br>
+      <h1>Top Indian Institutes</h1>
+      <ul class="ul">
+        <li>Indian Institute of Technology (IITs)</li>
+        <li>Birla Institute of Technology & Science (BITS)</li>
+        <li>National Institute of Technology (NITs)</li>
+       
+      </ul>
+<br><br>
+      <h1>Pros</h1>
+      <ul class="ul">
+        <li>
+            The financial stability for doctors is really rewarding once the experience has been gained.
+        </li>
+        <li>
+            Job satisfaction for surgeons is high as they will be working for the betterment of society.
+        </li>
+        <li>It's an extremely respected profession from older times till now and it will continue to be so.</li>
+      </ul>
+      <br><br>
+      <h1>Cons</h1>
+      <ul class="ul">
+        <li>The administration of a business enterprise can be very demanding.</li>
+        <li>
+            You may not get good job opportunities, without post-graduation.
+        </li>
+        <li>
+            Bachelor’s in Business Administration is a very generalized course, making specialization essential.
+        </li>
+      </ul>
+    </section>
+
+    <br><br><br><br>
+
+    <div class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            Aptitude-based career counseling website provides personalized assessments to match individuals with suitable career paths, offering guidance on planning, education, and job search strategies aligned with their strengths and interests.
+          </p>
+        </div>
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">france</a>
+          <a href="#">russia</a>
+          <a href="#">japan</a>
+        </div>
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="#">home</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+          <a href="#">careerguidance</a>
+          <a href="#">aptitude</a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">instagram</a>
+          <a href="#">linkedin</a>
+          <a href="#">youtube</a>
+        </div>
+      </div>
+      <h1 class="credit">created by<a href="#">Us</a>&copy; copyright @2024</h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

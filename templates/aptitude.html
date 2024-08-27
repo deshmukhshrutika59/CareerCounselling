@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Forms</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/static/style/style.css" />
+    <style>
+      body {
+        /* font-family: Arial, sans-serif; */
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      button {
+        display: block;
+        width: 150px;
+        /* Adjust the width as needed */
+        padding: 10px;
+        /* Adjust the padding as needed */
+        margin-top: 20px;
+        margin-left: calc(50% - 75px);
+        /* Keep the buttons centered */
+        background-color: var(--dark-blue);
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: var(--dark-blue);
+      }
+
+      /* .test-form {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 20px;
+} */
+      .test-form {
+        display: none;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 20px;
+        border: 6px solid var(--dark-blue);
+        /* Add border */
+        background-color: #fff;
+        /* Add background color */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        /* Add box shadow */
+        transition: box-shadow 0.3s ease;
+        /* Add transition for box shadow */
+      }
+
+      .test-form:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        /* Change box shadow on hover */
+      }
+
+      .test-form h2 {
+        margin-top: 0;
+      }
+
+      input[type="text"] {
+        /* font-size: 60px; */
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      label {
+        font-weight: bold;
+        font-size: 15px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        margin: 5px 0;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Choose a Test</h1>
+    <form id="testSelectionForm" action="#" method="post">
+      <button type="button" onclick="showTestForm('math')">Math Test</button>
+      <button type="button" onclick="showTestForm('biology')">
+        Biology Test
+      </button>
+      <button type="button" onclick="showTestForm('arts')">Arts Test</button>
+      <button type="button" onclick="showTestForm('commerce')">
+        Commerce Test
+      </button>
+    </form>
+
+    <hr />
+
+    <div id="mathTestForm" class="test-form">
+      <h2>Math Test</h2>
+      <form action="/submit" method="post">
+        <input type="hidden" name="subject" value="math" />
+        <label for="math_question1"
+          >Question 1: Solve for 𝑥 in the equation: 3x+7=16. </label
+        ><br />
+        <p>a) x=3</p>
+        <p>b) x=4</p>
+        <p>c) x=5</p>
+        <p>d) x=7</p>
+        <input
+          type="text"
+          id="math_question1"
+          name="math_question1"
+        /><br /><br />
+        <label for="math_question2"
+          >Question 2: Find the area of a triangle with base 8 units and height
+          6 units.</label
+        ><br />
+        <p>a) 20 square units</p>
+        <p>b) 24 square units</p>
+        <p>c) 34 square units</p>
+        <p>d) 56 square units</p>
+        <input
+          type="text"
+          id="math_question2"
+          name="math_question2"
+        /><br /><br />
+        <label for="math_question3"
+          >Question 3: If sin(𝜃)=3/5, find cos(θ).</label
+        ><br />
+        <p>a) 4/5</p>
+        <p>b) 3/4</p>
+        <p>c) 1/2</p>
+        <p>d) 5/6</p>
+        <input
+          type="text"
+          id="math_question3"
+          name="math_question3"
+        /><br /><br />
+        <label for="math_question4"
+          >Question 4: If a fair six-sided die is rolled, what is the
+          probability of rolling an even number? </label
+        ><br />
+        <p>a) 1/2</p>
+        <p>b) 1/3</p>
+        <p>c) 1/4</p>
+        <p>d) 3/2</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 5: The ages of students in a class are:18,20,22,24,26. What
+          is the median age?</label
+        ><br />
+        <p>a) 20</p>
+        <p>b) 22</p>
+        <p>c) 24</p>
+        <p>d) 45</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 6: If 𝑎 a and 𝑏 b are the roots of the quadratic equation 𝑥
+          2 − 5 𝑥 + 6 = 0 x 2 −5x+6=0, find 𝑎 3 + 𝑏 3 a 3 +b 3 .</label
+        ><br />
+        <p>a) 20</p>
+        <p>b) 91</p>
+        <p>c) 24</p>
+        <p>d) 45</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 7: A right circular cone has a base radius of 5 cm and a
+          height of 12 cm. Find the volume of the cone.</label
+        ><br />
+        <p>a) 100π cm³</p>
+        <p>b) 67π cm³</p>
+        <p>c)50π cm³</p>
+        <p>d) 200π cm³</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 8: If the day before yesterday was Thursday, what will be
+          the day after tomorrow?</label
+        ><br />
+        <p>a) saturday</p>
+        <p>b) Thursday</p>
+        <p>c) Tuesday</p>
+        <p>d) Monday</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 9: A train running at the speed of 60 km/hr crosses a pole
+          in 9 seconds. What is the length of the train? </label
+        ><br />
+        <p>a) 150 meters</p>
+        <p>b) 350 meters</p>
+        <p>c)50 meters</p>
+        <p>d) 10 meters</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5">Question 10: What is 20% of 150?</label
+        ><br />
+        <p>a) 20</p>
+        <p>b) 30</p>
+        <p>c) 24</p>
+        <p>d) 45</p>
+
+        <input
+          type="text"
+          id="math_question5"
+          name="math_question5"
+        /><br /><br />
+        <button type="submit">Submit Math Test</button>
+      </form>
+    </div>
+
+    <div id="biologyTestForm" class="test-form">
+      <h2>Biology Test</h2>
+      <form action="/submit" method="post">
+        <input type="hidden" name="subject" value="biology" />
+        <label for="biology_question1"
+          >Question 1: What is the powerhouse of the cell?</label
+        ><br />
+        <p>a) Nucleus</p>
+        <p>b) Ribosome</p>
+        <p>c) Mitochondrion</p>
+        <p>d) Molecule</p>
+        <input
+          type="text"
+          id="biology_question1"
+          name="biology_question1"
+        /><br /><br />
+        <label for="biology_question2"
+          >Question 2: What is the term for the physical appearance of an
+          organism, resulting from the interaction of its genotype with the
+          environment?</label
+        ><br />
+        <p>a) Phenotype</p>
+        <p>b) Genotype</p>
+        <p>c) Homozygous</p>
+        <p>d) Hetrotype</p>
+
+        <input
+          type="text"
+          id="biology_question2"
+          name="biology_question2"
+        /><br /><br />
+        <label for="biology_question3"
+          >Question 3: Which organ is responsible for pumping blood throughout
+          the body?</label
+        ><br />
+        <p>a) Liver</p>
+        <p>b) Heart</p>
+        <p>c) Kidney</p>
+        <p>d) Lungs</p>
+
+        <input
+          type="text"
+          id="biology_question3"
+          name="biology_question3"
+        /><br /><br />
+        <label for="biology_question4"
+          >Question 4: What is the smallest unit of life?</label
+        ><br />
+        <p>a) Cell</p>
+        <p>b) Atom</p>
+        <p>c) Molecule</p>
+        <p>d) Mitochondrion</p>
+
+        <input
+          type="text"
+          id="biology_question4"
+          name="biology_question4"
+        /><br /><br />
+        <label for="biology_question5"
+          >Question 5: Which part of the plant is responsible for
+          photosynthesis?</label
+        ><br />
+        <p>a) Roots</p>
+        <p>b) Stem</p>
+        <p>c) Leaves</p>
+        <p>d) All</p>
+
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 6: Who proposed the theory of natural selection?</label
+        ><br />
+        <p>a)Gregor Mendel</p>
+        <p>b) Charles Darwin</p>
+        <p>c) Louis Pasteur</p>
+        <p>d) Robert Hooke</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 7: What term describes the change in allele frequencies in a
+          population over generations due to random events?</label
+        ><br />
+        <p>a) Genetic drift</p>
+        <p>b) Charles Darwin</p>
+        <p>c) Louis Pasteur</p>
+        <p>d) Robert Hooke</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 8: What is the end product of glycolysis?</label
+        ><br />
+        <p>a) Glucose</p>
+        <p>b) Pyruvate</p>
+        <p>c) Acetyl-CoA</p>
+        <p>d) ATP</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 9: What is the main function of stomata in plant
+          leaves?</label
+        ><br />
+        <p>a) Transport water</p>
+        <p>b) Exchange gases</p>
+        <p>c) Absorb nutrients</p>
+        <p>d) Store food</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 10: What is the expected phenotypic ratio of a dihybrid
+          cross in the F2 generation?</label
+        ><br />
+        <p>a) 3:1</p>
+        <p>b) 9:3:3:1</p>
+        <p>c) 1:2:1</p>
+        <p>d) 1:1:1:1</p>
+        <input
+          type="text"
+          id="biology_question5"
+          name="biology_question5"
+        /><br /><br />
+        <button type="submit">Submit Biology Test</button>
+      </form>
+    </div>
+
+    <div id="artsTestForm" class="test-form">
+      <h2>arts Test</h2>
+      <form action="/submit" method="post">
+        <input type="hidden" name="subject" value="arts" />
+        <label for="arts_question1"
+          >Question 1: If you enjoy reading and analyzing novels, poems, and
+          plays, have you considered a career as a:</label
+        ><br />
+        <p>a) Literary critic</p>
+        <p>b) Editor</p>
+        <p>c) All of the above</p>
+        <p>d)None</p>
+        <input
+          type="text"
+          id="arts_question1"
+          name="arts_question1"
+        /><br /><br />
+        <label for="arts_question2"
+          >Question 2: Are you passionate about visual arts, museums, and
+          cultural heritage? A career as an:</label
+        ><br />
+        <p>a) Art historian</p>
+        <p>b) Museum curator</p>
+        <p>c) All of the above</p>
+        <p>d)None</p>
+        <input
+          type="text"
+          id="arts_question2"
+          name="arts_question2"
+        /><br /><br />
+        <label for="arts_question3"
+          >Question 3: Do you have a way with words and enjoy writing poetry or
+          lyrics? Consider careers in writing, such as:</label
+        ><br />
+        <p>a) Poet</p>
+        <p>b) Lyricist</p>
+        <p>c) All of the above</p>
+        <p>d)None</p>
+        <input
+          type="text"
+          id="arts_question3"
+          name="arts_question3"
+        /><br /><br />
+        <label for="arts_question4"
+          >Question 4: Do you have a flair for acting, directing, or stage
+          production? Consider pursuing a career as a:</label
+        ><br />
+        <p>a) Actor</p>
+        <p>b) Director</p>
+        <p>c) All of the above</p>
+        <p>d)None</p>
+        <input
+          type="text"
+          id="arts_question4"
+          name="arts_question4"
+        /><br /><br />
+        <label for="arts_question5"
+          >Question 5: Are you interested in analyzing society, culture, and
+          human behavior? Consider careers in:</label
+        ><br />
+        <p>a) Sociology</p>
+        <p>b) Social work</p>
+        <p>c) All of the above</p>
+        <p>d)None</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 6: "The Republic" is a work by which ancient Greek
+          philosopher? </label
+        ><br />
+        <p>a) Aristotle</p>
+        <p>b) Plato</p>
+        <p>c) Socrates</p>
+        <p>d) Epicurus</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 7: Who is considered the father of modern drama, known for
+          plays like "A Doll's House"? </label
+        ><br />
+        <p>a) Henrik Ibsen</p>
+        <p>b) Anton Chekhov</p>
+        <p>c) August Strindberg</p>
+        <p>d) Arthur Miller</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 8: Question: Which artist is known for his "Blue Period" and
+          "Rose Period" paintings? </label
+        ><br />
+        <p>a) Pablo Picasso</p>
+        <p>b) Henri Matisse</p>
+        <p>c) Edvard Munch</p>
+        <p>d) Gustav Klimt</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 9: "Starry Night" is a famous painting by which
+          post-impressionist artist? </label
+        ><br />
+        <p>a) Paul Gauguin</p>
+        <p>b) Paul Cézanne</p>
+        <p>c) Vincent van Gogh</p>
+        <p>d) Georges Seurat</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 10: The "Taj Mahal" is an iconic example of which
+          architectural style? </label
+        ><br />
+        <p>a) Gothic</p>
+        <p>b) Baroque</p>
+        <p>c) Mughal</p>
+        <p>d) Renaissance</p>
+        <input
+          type="text"
+          id="arts_question5"
+          name="arts_question5"
+        /><br /><br />
+        <button type="submit">Submit arts Test</button>
+      </form>
+    </div>
+
+    <div id="commerceTestForm" class="test-form">
+      <h2>commerce Test</h2>
+      <form action="/submit" method="post">
+        <input type="hidden" name="subject" value="commerce" />
+        <label for="commerce_question1"
+          >Question 1: What is the process of systematically recording,
+          analyzing, and interpreting financial transactions of a
+          business?</label
+        ><br />
+        <p>a) Auditing</p>
+        <p>b) Budgeting</p>
+        <p>c) All</p>
+        <p>d) Bookkeeping</p>
+        <input
+          type="text"
+          id="commerce_question1"
+          name="commerce_question1"
+        /><br /><br />
+        <label for="commerce_question2"
+          >Question 2: What is the term for the cost of borrowing money, usually
+          expressed as a percentage?</label
+        ><br />
+        <p>a) Interest</p>
+        <p>b) Dividend</p>
+        <p>c) Commission</p>
+        <p>d)None</p>
+        <input
+          type="text"
+          id="commerce_question2"
+          name="commerce_question2"
+        /><br /><br />
+        <label for="commerce_question3"
+          >Question 3: What is the term for the willingness and ability to take
+          the risks involved in starting and managing a business?</label
+        ><br />
+        <p>a) Innovation</p>
+        <p>b) Capital</p>
+        <p>c) Entrepreneurship</p>
+        <p>d) All</p>
+        <input
+          type="text"
+          id="commerce_question3"
+          name="commerce_question3"
+        /><br /><br />
+        <label for="commerce_question4"
+          >Question 4: What is the term for a company that operates in more than
+          one country?</label
+        ><br />
+        <p>a) Multinational corporation</p>
+        <p>b) Domestic corporation</p>
+        <p>c) Partnership</p>
+        <p>d)All</p>
+        <input
+          type="text"
+          id="commerce_question4"
+          name="commerce_question4"
+        /><br /><br />
+        <label for="commerce_question5"
+          >Question 5: Which of the following is NOT a factor of production in
+          economics? </label
+        ><br />
+        <p>a) Land</p>
+        <p>b) Labor</p>
+        <p>c) Money</p>
+        <p>d)None</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 6: In a perfectly competitive market, the price is
+          determined by: </label
+        ><br />
+        <p>a) The individual seller</p>
+        <p>b) The individual buyer</p>
+        <p>c) The government</p>
+        <p>d) The intersection of market supply and demand</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 7: SWOT analysis is a tool used to assess: </label
+        ><br />
+        <p>a) Sales projections</p>
+        <p>b) Market conditions</p>
+        <p>c) Internal and external factors affecting an organization</p>
+        <p>d) Financial statements</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 8: What is the primary purpose of a balance sheet? </label
+        ><br />
+        <p>a) To show the company’s profit over a period</p>
+        <p>b) To provide a summary of all expenses</p>
+        <p>
+          c) To show the company’s financial position at a specific point in
+          time
+        </p>
+        <p>d) To display the cash flow from operations</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 9: The concept of "opportunity cost" is best described as: </label
+        ><br />
+        <p>a) The monetary cost of a good or service</p>
+        <p>b) The benefits of the next best alternative foregone</p>
+        <p>c) The sum of all past costs</p>
+        <p>d) The cost of raw materials</p>
+        <input
+          type="text"
+          id="math_question4"
+          name="math_question4"
+        /><br /><br />
+        <label for="math_question5"
+          >Question 10: The "Time Value of Money" concept means: </label
+        ><br />
+        <p>a) Money loses value over time</p>
+        <p>b) Money's value remains constant over time</p>
+        <p>
+          c) Money available now is worth more than the same amount in the
+          future
+        </p>
+        <p>d) Money's value increases with inflation</p>
+        <input
+          type="text"
+          id="commerce_question5"
+          name="commerce_question5"
+        /><br /><br />
+        <button type="submit">Submit commerce Test</button>
+      </form>
+    </div>
+
+    <script>
+      function showTestForm(subject) {
+        // Hide all test forms
+        var testForms = document.querySelectorAll(".test-form");
+        testForms.forEach(function (form) {
+          form.style.display = "none";
+        });
+
+        // Show the selected test form
+        document.getElementById(subject + "TestForm").style.display = "block";
+
+        // Set the subject value in the hidden input field
+        document.getElementById("testSelectionForm").subject.value = subject;
+
+        // Submit the form
+        document.getElementById("testSelectionForm").submit();
+      }
+    </script>
+
+    {% if all_tests_completed %}
+    <form action="/overall_result" method="get">
+      <button type="submit">See Overall Result</button>
+    </form>
+    {% endif %}
+  </body>
+</html>

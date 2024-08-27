@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="/static/style/style.css" />
+    <style>
+        h1{
+            font-size: 2.5rem;
+            color: #0a3d62;
+        }
+        .ul{
+            font-size: 1.6rem;
+            color: black;
+        }
+        p{
+            font-size: 1.6rem;
+            color: black;
+        }
+        .hea{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">CareerCounselling</a>
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a class="active" href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('contact') }}">Contact Us</a>
+        <!-- <a href="{{ url_for('login') }}">login</a> -->
+        <div class="dropdown">
+          <a href="#" id="moreLink">More <i class="fas fa-caret-down"></i></a>
+          <div class="submenu" id="moreSubmenu">
+            <a href="{{ url_for('careerg') }}">Career</a>
+            <a href="{{ url_for('aptitude') }}">Aptitude</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h1 class="hea">Entrepreneurship</h1>
+<br><br>
+      <h1>What Makes This Career Worth Pursuing?</h1>
+      <p>
+        Do you want to do something of your own and be your boss? Then being an entrepreneur is just for you. Entrepreneurship is defined as the capacity and willingness to create, organize, and run a firm, including all of its risks, to make a profit. The most visible form of entrepreneurship is the establishment of new firms. It revolves around designing and pursuing a business idea and often starting a new business. Although there are no educational requirements for being an entrepreneur, a strong educational background allows you to be a better entrepreneur with you already knowing how to run a business.
+
+It can be defined as the creation or extraction of value. Entrepreneurs serve as managers, overseeing the start-up and growth of a business. Entrepreneurship is the process through which an individual or a group recognizes a business opportunity and obtains and deploys the resources needed to pursue it.</p>
+      <br><br>
+
+      <h1>Description</h1>
+      <p>
+        To be a successful entrepreneur, one needs to have an innovative yet sustainable idea for a business and be extremely dedicated to their cause. It needs a lot of persistence, hard work, and time to often succeed. One often has to take risks and take challenging roads to be a successful entrepreneur. Being an entrepreneur entails having a business idea and putting it into action. Once a business idea is conceived, an entrepreneur must carry out several tasks to make it a reality. It involves market research to investigate competitors (if any) and determine the target audience to professional recruitment, financial management, and overall administration.
+      </p>
+<br><br>
+      <h1>Skills You Need</h1>
+      <ul class="ul">
+        <li>
+            Creativity Skills: One needs to be creative to give their product an edge over that of their competitors.
+        </li>
+        <li>
+            Leadership Skills: As you are effectively the leader of your business, you need to have good leadership skills.
+        </li>
+        <li>
+            Hardworking: Running a business is not easy and one needs to be willing in to put the extra dedication to succeed.
+        </li>
+        <li>Networking Skills: One needs to have a strong network to get the big push for their product into the markets.</li>
+        <li>Persistence: Successful businesses are not established in a day and one needs to be willing to persevere for success.</li>
+      </ul>
+<br><br>
+      <h1>How To Pursue</h1>
+      <ul class="ul">
+        <li>
+          School: Any subject combination taking Science as the main stream.
+        </li>
+        <li>
+            Graduation: Bachelor of Business Administration / Bachelor of Commerce
+        </li>
+
+        <li>
+            Post Graduation: Masters of Business Administration in Entrepreneurship /Finances
+        </li>
+      </ul>
+      <br><br>
+
+      <h1>Top Indian Institutes</h1>
+      <ul class="ul">
+        <li>Indian Institute of Management</li>
+        <li>Indian School of Business</li>
+        <li>Xavier School of Management</li>
+        <li>S.P. Jain Institute of Management and Research</li>
+       
+      </ul>
+<br><br>
+      <h1>Pros</h1>
+      <ul class="ul">
+        <li>
+            You get to create something of your own.
+        </li>
+        <li>
+            You get to decide your work hours and thus get flexibility.
+        </li>
+        <li>You can also decide what field you work in.</li>
+      </ul>
+      <br><br>
+      <h1>Cons</h1>
+      <ul class="ul">
+        <li>Starting a new business is a risky venture.</li>
+        <li>
+            One may have to work much harder to get the big break.
+        </li>
+        <li>
+            One has to take a lot of responsibility and it can often be stressful.
+        </li>
+      </ul>
+    </section>
+
+    <br><br><br><br>
+
+    <div class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            Aptitude-based career counseling website provides personalized assessments to match individuals with suitable career paths, offering guidance on planning, education, and job search strategies aligned with their strengths and interests.
+          </p>
+        </div>
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">france</a>
+          <a href="#">russia</a>
+          <a href="#">japan</a>
+        </div>
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="#">home</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+          <a href="#">careerguidance</a>
+          <a href="#">aptitude</a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">instagram</a>
+          <a href="#">linkedin</a>
+          <a href="#">youtube</a>
+        </div>
+      </div>
+      <h1 class="credit">created by<a href="#">Us</a>&copy; copyright @2024</h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

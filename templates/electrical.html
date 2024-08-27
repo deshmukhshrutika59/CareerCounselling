@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="/static/style/style.css" />
+    <style>
+        h1{
+            font-size: 2.5rem;
+            color: #0a3d62;
+        }
+        .ul{
+            font-size: 1.6rem;
+            color: black;
+        }
+        p{
+            font-size: 1.6rem;
+            color: black;
+        }
+        .hea{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">CareerCounselling</a>
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a class="active" href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('contact') }}">Contact Us</a>
+        <!-- <a href="{{ url_for('login') }}">login</a> -->
+        <div class="dropdown">
+          <a href="#" id="moreLink">More <i class="fas fa-caret-down"></i></a>
+          <div class="submenu" id="moreSubmenu">
+            <a href="{{ url_for('careerg') }}">Career</a>
+            <a href="{{ url_for('aptitude') }}">Aptitude</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h1 class="hea">Electrical Engineering</h1>
+<br><br>
+      <h1>What Makes This Career Worth Pursuing?</h1>
+      <p>
+        Are you fascinated by the realm of electricity and its diverse applications? If so, electrical engineering could be the perfect fit for you! This branch of engineering revolves around the exploration, design, and implementation of devices, systems, and assorted equipment that harness the power of electricity, electronics, and electromagnetism.
+
+Within electrical engineering, there are specialized domains such as power engineering, control engineering, electronic engineering, and instrumentation engineering. It encompasses a broad spectrum of knowledge, encompassing technical aspects like circuit theory, alongside crucial managerial skills. With a substantial professional scope, electrical engineering is a field rooted in pure science. Engineers equipped with a management background have the opportunity to venture into administrative roles and potentially explore the corporate sector, thereby broadening their career horizons.</p>
+      <br><br>
+
+      <h1>Description</h1>
+      <p>
+        Electrical engineers leverage their understanding of the principles of electricity, electromagnetism, and electronics, backed by a foundation in physics and mathematics, to conceive and innovate electrical equipment and systems. They address challenges, conduct equipment testing, and employ Computer-Aided Design (CAD) for tasks like schematic creation and circuit layout. In contemporary practice, electrical engineers are engaged in a diverse array of projects spanning from robotics and mobile devices to navigation systems, radars, computers, and more. They contribute their expertise across various domains, including design, manufacturing, supervision, and beyond.
+      </p>
+<br><br>
+      <h1>Skills You Need</h1>
+      <ul class="ul">
+        <li>
+            Communication Skills: These are essential as they need to interact with clients as well as investors/shareholders.
+        </li>
+        <li>
+          Technical Skills: Engineers should have basic circuit knowledge as in large scale projects design can get very complex. Thorough knowledge of maths and physics is also necessary.
+        </li>
+        <li>
+          Thinking Skills: To solve the unique problems, critical thinking will come into the picture. The ability to approach things differently with innovative techniques will make a difference.
+        </li>
+        
+      </ul>
+<br><br>
+      <h1>How To Pursue</h1>
+      <ul class="ul">
+        <li>
+            School: Any subject combination taking Science or Commerce or Arts (Humanities).
+        </li>
+        <li>
+          Graduation: B.Tech in Electrical Engineering / B.Tech in Electronics & Instrumentation Engineering / B.Tech in Electrical & Electronics Engineering.
+        </li>
+
+        <li>
+          Post Graduation: M.Tech in Electrical Engineering.
+        </li>
+      </ul>
+      <br><br>
+      <h1>Job Opportunities</h1>
+      <ul class="ul">
+        <li>Electrical Engineer</li>
+      <li>CAD Technician</li>
+      <li>Control & Instrumental Engineer</li>
+      <li>Network Engineer</li>
+      <li>Embedded Systems Engineer</li>
+      <li>Telecommunications Engineer</li>
+      </ul>
+<br><br>
+      <h1>Top Indian Institutes</h1>
+      <ul class="ul">
+        <li>Indian Institute of Technology (IITs)</li>
+        <li>Birla Institute of Technology & Science (BITS)</li>
+        <li>National Institute of Technology (NITs)</li>
+       
+      </ul>
+<br><br>
+      <h1>Pros</h1>
+      <ul class="ul">
+        <li>
+          The pay scale is very good, which accounts for a comfortable lifestyle.
+        </li>
+        <li>
+          The work hours are slightly more flexible than other fields, which results in job flexibility as well.
+
+        </li>
+        <li>The field offers a wide range of opporunities.</li>
+      </ul>
+      <br><br>
+      <h1>Cons</h1>
+      <ul class="ul">
+        <li>The occupation is risky, as it deals with electricity.</li>
+        <li>
+          The growth potential is very limited here.
+        </li>
+        <li>
+          There is a lot of hard work involved, as well as tight deadlines.
+
+        </li>
+      </ul>
+    </section>
+
+    <br><br><br><br>
+
+    <div class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            Aptitude-based career counseling website provides personalized assessments to match individuals with suitable career paths, offering guidance on planning, education, and job search strategies aligned with their strengths and interests.
+          </p>
+        </div>
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">france</a>
+          <a href="#">russia</a>
+          <a href="#">japan</a>
+        </div>
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="#">home</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+          <a href="#">careerguidance</a>
+          <a href="#">aptitude</a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">instagram</a>
+          <a href="#">linkedin</a>
+          <a href="#">youtube</a>
+        </div>
+      </div>
+      <h1 class="credit">created by<a href="#">Us</a>&copy; copyright @2024</h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

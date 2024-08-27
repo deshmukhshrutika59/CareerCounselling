@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="/static/style/style.css">
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+/* Style for the profile container */
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #0a3d62;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style for the profile image */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+/* Style for the welcome message */
+.welcome-message {
+    font-size: 24px;
+    color: #0a3d62;
+    margin-bottom: 20px;
+}
+
+/* Style for the email */
+.email {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Style for the logout link */
+.logout-link {
+    font-size: 16px;
+    background-color: #0a3d62;
+    /* text-decoration: none; */
+    font-size:1.7rem;
+    margin-left: .7rem; 
+    padding:.5rem 2rem; 
+    border-radius: .5rem;
+    color: white;
+    box-shadow: rgd(0,0,0);
+    
+}
+
+.logout-link:hover {
+    background: var(--blue);
+    color:#fff;
+    box-shadow: rgd(0,0,0);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">CareerCounselling</a>
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+          <a class="active" href="{{ url_for('home') }}">Home</a>
+            {% if 'username' in session %}
+                <!-- <a href="{{ url_for('profile') }}">Profile</a> -->
+               
+            {% else %}
+                <a href="{{ url_for('login') }}">Login</a>
+                <a href="{{ url_for('register') }}">Register</a>
+            {% endif %}
+        </nav>
+      </header>
+      <main>
+        {% block content %}{% endblock %}
+    </main>
+    
+    
+</body>
+</html>

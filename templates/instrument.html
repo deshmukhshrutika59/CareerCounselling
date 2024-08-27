@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="/static/style/style.css" />
+    <style>
+        h1{
+            font-size: 2.5rem;
+            color: #0a3d62;
+        }
+        .ul{
+            font-size: 1.6rem;
+            color: black;
+        }
+        p{
+            font-size: 1.6rem;
+            color: black;
+        }
+        .hea{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">CareerCounselling</a>
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <a class="active" href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}">About Us</a>
+        <a href="{{ url_for('contact') }}">Contact Us</a>
+        <!-- <a href="{{ url_for('login') }}">login</a> -->
+        <div class="dropdown">
+          <a href="#" id="moreLink">More <i class="fas fa-caret-down"></i></a>
+          <div class="submenu" id="moreSubmenu">
+            <a href="{{ url_for('careerg') }}">Career</a>
+            <a href="{{ url_for('aptitude') }}">Aptitude</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h1 class="hea">Electrical & Instrumentation Engineering</h1>
+<br><br>
+      <h1>What Makes This Career Worth Pursuing?</h1>
+      <p>
+        Are you intrigued by the intricate interplay of instruments and systems in various applications? If so, Electrical & Instrumentation Engineering might be the ideal path for you! This discipline is closely linked to the study, development, and utilization of devices, systems, and specialized equipment that involve electricity, electronics, and instrumentation.
+
+Within Electrical & Instrumentation Engineering, there are diverse subfields, including process control systems, industrial automation, and measurement technologies. It encompasses both theoretical understanding, such as signal processing, and practical applications, making it a well-rounded field. Professionals in this domain often find themselves at the intersection of technical expertise and management skills. Moreover, Electrical & Instrumentation Engineering offers a dynamic professional landscape, with opportunities for those interested in administrative roles and corporate sectors to further enhance their career prospects.</p>
+      <br><br>
+
+      <h1>Description</h1>
+      <p>
+        Electrical and Instrumentation Engineers leverage their expertise in electrical systems, instrumentation, and control technologies to conceive, design, and advance sophisticated equipment and systems. They employ principles of electricity, electronics, and control theory to tackle complex challenges, as well as to validate and fine-tune equipment. In today's technological landscape, Electrical and Instrumentation Engineers proficiently utilize Computer-Aided Design (CAD) tools to craft detailed schematics and circuit layouts. Their scope of projects spans a wide spectrum, encompassing endeavors like refining industrial automation processes, optimizing power distribution networks, and enhancing instrumentation systems for precise control and monitoring. These engineers find opportunities in diverse domains, including design, manufacturing, supervision, and more, contributing significantly to sectors ranging from energy production to process control and beyond.
+      </p>
+<br><br>
+      <h1>Skills You Need</h1>
+      <ul class="ul">
+        <li>
+            Communication Skills: These are essential as they need to interact with clients as well as investors/shareholders.
+        </li>
+        <li>
+          Managerial Skills: Progress of a computer engineer is through leading their teams. It is very necessary to have management skills to progress in a career.
+        </li>
+        <li>
+          Problem Solving Skills: The job of an engineer is practical. It is a job where theory gets converted into practical application. They have to think logically and revisit the concepts to solve the problem as every problem will be unique.
+        </li>
+        
+      </ul>
+<br><br>
+      <h1>How To Pursue</h1>
+      <ul class="ul">
+        <li>
+            School: Any subject combination taking Science or Commerce or Arts (Humanities).
+        </li>
+        <li>
+          Graduation: B.Tech in Electronics & Instrumentation Engineering / B.Tech in Electrical & Electronics Engineering / B.Tech in Electrical Engineering.
+        </li>
+
+        <li>
+          Post Graduation: M.Tech in Electronics & Instrumentation Engineering.
+        </li>
+      </ul>
+      <br><br>
+      <h1>Job Opportunities</h1>
+      <ul class="ul">
+        <li>Automation Engineer
+        </li>
+      <li>Robotics Engineer</li>
+      <li>Control & Instrumental Engineer</li>
+      <li>Network Engineer</li>
+      <li>Embedded Systems Engineer</li>
+      <li>Telecommunications Engineer</li>
+      </ul>
+<br><br>
+<h1>Top Indian Institutes</h1>
+<ul class="ul">
+  <li>Indian Institute of Technology (IITs)</li>
+  <li>Birla Institute of Technology & Science (BITS)</li>
+  <li>National Institute of Technology (NITs)</li>
+ 
+</ul>
+<br><br>
+<h1>Pros</h1>
+<ul class="ul">
+  <li>
+    The pay scale is very good, which accounts for a comfortable lifestyle.
+  </li>
+  <li>
+    The work hours are slightly more flexible than other fields, which results in job flexibility as well.
+
+  </li>
+  <li>The field offers a wide range of opporunities.</li>
+</ul>
+<br><br>
+<h1>Cons</h1>
+<ul class="ul">
+  <li>The occupation is risky, as it deals with electricity.</li>
+  <li>
+    The growth potential is very limited here.
+  </li>
+  <li>
+    There is a lot of hard work involved, as well as tight deadlines.
+
+  </li>
+</ul>
+    </section>
+
+    <br><br><br><br>
+
+    <div class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>about us</h3>
+          <p>
+            Aptitude-based career counseling website provides personalized assessments to match individuals with suitable career paths, offering guidance on planning, education, and job search strategies aligned with their strengths and interests.
+          </p>
+        </div>
+        <div class="box">
+          <h3>locations</h3>
+          <a href="#">india</a>
+          <a href="#">USA</a>
+          <a href="#">france</a>
+          <a href="#">russia</a>
+          <a href="#">japan</a>
+        </div>
+        <div class="box">
+          <h3>Quick links</h3>
+          <a href="#">home</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+          <a href="#">careerguidance</a>
+          <a href="#">aptitude</a>
+        </div>
+        <div class="box">
+          <h3>Follow Us</h3>
+          <a href="#">facebook</a>
+          <a href="#">twitter</a>
+          <a href="#">instagram</a>
+          <a href="#">linkedin</a>
+          <a href="#">youtube</a>
+        </div>
+      </div>
+      <h1 class="credit">created by<a href="#">Us</a>&copy; copyright @2024</h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/static/script.js"></script>
+  </body>
+</html>

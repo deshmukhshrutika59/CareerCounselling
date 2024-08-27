@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Information</title>
+    <link rel="stylesheet" href="/static/style/style.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.7rem;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-top: 0;
+            font-size: 2.2rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        ul li::before {
+            content: "\2022";
+            color: #007bff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        ul li {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        ul li:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Career Information</h1>
+        {% if max_score_subject[0] == 'math' %}
+        <h2>Career Paths for Mathematics</h2>
+        <br><br>
+        <ul>
+            <li>Mathematician</li>
+            <li><a href="/enginee">Engineering</a></li>
+            <li>Computer Science</li>
+
+        </ul>
+        {% elif max_score_subject[0] == 'biology' %}
+        <h2>Career Paths for Biology</h2>
+        <ul>
+            <li><a href="/medici">Medicine</a></li>
+
+        </ul>
+        {% elif max_score_subject[0] == 'arts' %}
+        <h2>Career Paths for Arts</h2>
+        <ul>
+            <li><a href="/design">Designer</a></li>
+            <li>Photographer</li>
+            <li>Media & Journalism</li>
+
+        </ul>
+        {% elif max_score_subject[0] == 'commerce' %}
+        <h2>Career Paths for commerce</h2>
+        <ul>
+            <li>Chemist</li>
+            <li>Pharmacist</li>
+            <li>Chemical Engineer</li>
+
+        </ul>
+        {% endif %}
+    </div>
+</body>
+
+</html>
