@@ -1,0 +1,61 @@
+Field of Study,Subject,Course Name,Course Description,Prerequisites,Duration,Institution
+Engineering,Aerospace Engineering,Introduction to Aerospace Engineering,"Overview of aerospace engineering principles, including aerodynamics, propulsion, and spacecraft design.","Mathematics,Physics,Chemistry",1 year,University of ABC
+Engineering,Aerospace Engineering,Aircraft Design,"Study of aircraft design methodologies, including aerodynamic analysis, structural design, and systems integration.",Introduction to Aerospace Engineering,2 years,University of XYZ
+Engineering,Electrical Engineering,Introduction to Electrical Engineering,"A comprehensive introduction to the principles and applications of electrical engineering. Covers topics such as circuits, electronics, and electromagnetism.","Mathematics,Physics,Chemistry",1 year,University of XYZ
+Engineering,Electrical Engineering,Advanced Electrical Engineering Techniques,"Advanced topics in electrical engineering including signal processing, power systems, and control systems",Introduction to Electrical Engineering,2 years,University of XYZ
+Engineering,Mechanical Engineering,"Introduction to Mechanical Engineering,Basic concepts of mechanical engineering including mechanics, thermodynamics, and materials science.","Mathematics,Physics,Chemistry",1 year,University of ABC,
+Engineering,Mechanical Engineering,"Advanced Mechanical Engineering,Advanced topics in mechanical engineering such as robotics, fluid dynamics, and finite element analysis.",Introduction to Mechanical Engineering,2 years,University of ABC,
+Engineering,Computer Science,Introduction to Computer Science,"An introduction to programming, algorithms, data structures, and computer architecture",Mathematics,1 year,Online Platform XYZ
+Engineering,"Computer Science,Advanced Algorithms and Data Structures","Advanced study of algorithms and data structures, including analysis and design techniques.",Introduction to Computer Science,2 years,University of ABC,
+Engineering,Civil Engineering,"Introduction to Civil Engineering,Fundamental principles and practices of civil engineering, including structural analysis, geotechnical engineering, and transportation.","Mathematics,Physics,Chemistry",1 year,University of XYZ,
+Engineering,Civil Engineering,Environmental Engineering,Study of environmental issues and solutions in civil engineering projects.,Introduction to Civil Engineering,2 years,University of XYZ
+Medicine,Internal Medicine,Introduction to Internal Medicine,"A comprehensive overview of internal medicine, including diagnosis, treatment, and patient care.",Bachelor's degree in Biology or related field,4 years,Medical College ABC
+Medicine,Internal Medicine,Residency in Internal Medicine,A residency program focused on specialized training and hands-on experience in internal medicine.,Medical degree,3 years,Medical Center XYZ
+Medicine,Surgery,Introduction to Surgery,"Basic principles and techniques of surgery, including preoperative care, surgical procedures, and postoperative management.",Bachelor's degree in Medicine,4 years,Medical College ABC
+Medicine,Surgery,Surgical Residency,A residency program providing advanced training in surgical techniques and patient care.,Medical degree,5 years,Medical Center XYZ
+Medicine,Pediatrics,Introduction to Pediatrics,"Study of medical care for infants, children, and adolescents.",Bachelor's degree in Medicine,4 years,Medical College ABC
+Medicine,Pediatrics,Residency in Pediatrics,A residency program focusing on specialized training in pediatric medicine and child health.,Medical degree,3 years,Medical Center XYZ
+Business,Finance,Financial Management,"Study of financial principles, tools, and techniques used in corporate financial management.","Principles of Accounting,Principles of Finance",3 months,Online Platform XYZ
+Business,Finance,Investment Analysis,"An in-depth analysis of investment strategies, portfolio management, and financial markets.",Financial Management,2 years,University of ABC
+Business,Marketing,Consumer Behavior,Study of factors influencing consumer behavior and decision-making.,Principles of Marketing,1 year,University of ABC
+Business,Human Resources,Human Resource Management,"Study of recruitment, training, compensation, and employee relations in organizations.",Introduction to Business,1 year,Online Platform XYZ
+Business,Human Resources,Organizational Behavior,Analysis of individual and group behavior within organizations.,Introduction to Business,1 year,University of ABC
+Arts,Visual Arts,"Introduction to Drawing,Basic drawing techniques and principles.",None,6 months,Community Art Center,
+Arts,Visual Arts,Advanced Drawing,Advanced study of drawing techniques and concepts.,Introduction to Drawing,1 year,Art Institute ABC
+Arts,Music,Music Theory,"Fundamental principles of music theory including notation, scales, and harmony.",None,6 months,Online Platform XYZ
+Arts,Theater,Advanced Acting,Advanced study of acting techniques and methods.,Introduction to Acting,1 year,Drama School XYZ
+Science,Biology,Introduction to Biology,"An overview of basic biological concepts including cell biology, genetics, and ecology.",High school diploma,1 year,Online Platform XYZ
+Science,Biology,"Genetics,Study of genetic principles, inheritance patterns, and molecular genetics.",Introduction to Biology,1 year,University of ABC,
+Science,Chemistry,Organic Chemistry,"Study of the structure, properties, and reactions of organic compounds.",Introduction to Chemistry,1 year,University of XYZ
+Science,Physics,Introduction to Physics,"Fundamental principles of physics including mechanics, thermodynamics, and electromagnetism.",High school diploma,1 year,Online Platform XYZ
+Science,Physics,Quantum Mechanics,Study of the principles and applications of quantum mechanics.,Introduction to Physics,1 year,University of ABC
+Technology,Information Technology,Introduction to Information Technology,"Overview of information technology concepts, including computer systems, networks, and databases.",None,6 months,Online Platform XYZ
+Technology,Information Technology,Database Management,"Systems, and concepts related to database management.",Introduction to Information Technology,1 year,University of XYZ
+Technology,Computer Networking,Network Administration,Administration and management of computer networks.,Networking Fundamentals,1 year,Online Platform XYZ
+Technology,Artificial Intelligence,Introduction to Artificial Intelligence,Fundamental concepts and techniques in artificial intelligence.,Introduction to Information Technology,1 year,University of XYZ
+Technology,Artificial Intelligence,Machine Learning,Study of algorithms and models for machine learning and data analysis.,Introduction to Artificial Intelligence,1 year,University of ABC
+Humanities,History,History of the United States,An overview of the history of the United States from colonial times to the present.,None,1 year,University of ABC
+Humanities,Philosophy,Introduction to Philosophy,Fundamental concepts and questions in philosophy.,None,6 months,Online Platform XYZ
+Humanities,Philosophy,Ethics,Study of moral principles and ethical dilemmas.,Introduction to Philosophy,1 year,University of XYZ
+Humanities,Literature,Introduction to Literature,"Exploration of literary genres, themes, and techniques.",None,6 months,Online Platform XYZ
+Humanities,Literature,Modern Fiction,Study of modern fiction literature and its cultural significance.,Introduction to Literature,1 year,University of ABC
+Engineering,Aerospace Engineering,Introduction to Aerospace Engineering,"Overview of aerospace engineering principles, including aerodynamics, propulsion, and spacecraft design.","Mathematics,Physics,Chemistry",1 year,University of ABC
+Engineering,Aerospace Engineering,Aircraft Design,"Study of aircraft design methodologies, including aerodynamic analysis, structural design, and systems integration.",Introduction to Aerospace Engineering,2 years,University of XYZ
+Engineering,Chemical Engineering,Introduction to Chemical Engineering,"Basic principles of chemical engineering including material balances, energy balances, and chemical kinetics.","Mathematics,Physics,Chemistry",1 year,University of XYZ
+Engineering,Chemical Engineering,Process Control and Optimization,Study of process control techniques and optimization methods in chemical engineering.,Introduction to Chemical Engineering,2 years,University of ABC
+Engineering,Environmental Engineering,Introduction to Environmental Engineering,"Fundamental concepts in environmental engineering including water quality, air pollution, and waste management.","Mathematics,Physics,Chemistry",1 year,University of XYZ
+Engineering,Environmental Engineering,Sustainable Development,Study of sustainable development principles and practices in environmental engineering projects.,Introduction to Environmental Engineering,2 years,University of ABC
+Engineering,Biomedical Engineering,Introduction to Biomedical Engineering,"Overview of biomedical engineering applications in healthcare, including medical imaging, prosthetics, and tissue engineering.","Mathematics,Biology,Chemistry",1 year,University of ABC
+Engineering,Biomedical Engineering,Biomechanics,"Study of mechanical principles applied to biological systems, including musculoskeletal biomechanics and biomaterials.",Introduction to Biomedical Engineering,2 years,University of XYZ
+Engineering,Materials Science and Engineering,Introduction to Materials Science,"Fundamental concepts in materials science and engineering, including structure-property relationships and material characterization techniques.","Mathematics,Physics,Chemistry",1 year,University of XYZ
+Engineering,Materials Science and Engineering,Nanomaterials and Nanotechnology,"Study of nanomaterials synthesis, characterization, and applications in nanotechnology.",Introduction to Materials Science,2 years,University of ABC
+Medicine,Anatomy and Physiology,Human Anatomy,Study of the structure and function of the human body.,High school diploma,1 year,University of XYZ
+Medicine,Anatomy and Physiology,Human Physiology,Study of the normal functions of human organs and systems.,Human Anatomy,1 year,University of ABC
+Medicine,Pharmacology,Introduction to Pharmacology,Study of the effects of drugs on biological systems.,High school diploma,1 year,University of XYZ
+Medicine,Pharmacology,Clinical Pharmacology,"Study of drug interactions, dosage regimens, and therapeutic monitoring in clinical practice.",Introduction to Pharmacology,1 year,University of ABC
+Medicine,Neuroscience,Introduction to Neuroscience,"Basic principles of neuroscience including neural anatomy, physiology, and function.",High school diploma,1 year,University of XYZ
+Medicine,Neuroscience,Cognitive Neuroscience,Study of the neural mechanisms underlying cognition and behavior.,Introduction to Neuroscience,1 year,University of ABC
+Business,Accounting,Financial Accounting,Principles and practices of financial accounting.,High school diploma,6 months,Online Platform XYZ
+Business,Accounting,Managerial Accounting,Study of accounting information for internal decision-making.,Financial Accounting,6 months,University of ABC
+Business,Economics,Principles of Microeconomics,Introduction to microeconomic theory and analysis.,High school diploma,6 months,Online Platform XYZ
+Business,Economics,Principles of Macroeconomics,Introduction to macroeconomic theory and analysis.,Principles of Microeconomics,6 months,University of XYZ
